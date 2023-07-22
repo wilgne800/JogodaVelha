@@ -15,7 +15,7 @@ function escolherQuadrado(id) {
     }
 
     quadrado.innerHTML = jogador;
-    quadrado.style.color = '#000';
+    quadrado.style.color = '#ffffff';
 
     if (jogador === 'X') {
         jogador = 'O';
@@ -96,6 +96,7 @@ function checaVencedor() {
 function mudarVencedor(quadrado) {
     vencedor = quadrado.innerHTML;
     vencedorSelecionado.innerHTML = vencedor;
+
 }
 
 function mudarCorQuadrado(quadrado1, quadrado2, quadrado3) {
@@ -121,7 +122,7 @@ function reiniciar() {
     for (var i = 1; i <= 9; i++) {
         var quadrado = document.getElementById(i);
 
-        quadrado.style.background = '#eee';
+        quadrado.style.background = ' #007bff';
         quadrado.style.color = '#eee';
         quadrado.innerHTML = '-';
     }
